@@ -1,0 +1,20 @@
+/* src/components/Header/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 0 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  
+  .header-right {
+    font-style: italic;
+  }
