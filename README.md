@@ -37,11 +37,10 @@ To run this project locally:
    npm run dev
    ```
 
-4. Open your browser to the URL shown in the terminal (typically http://localhost:5173/)
 
 ## Deployment
 
-This project is deployed on Vercel. You can view the live version at [YOUR_VERCEL_URL].
+This project is deployed on Vercel. You can view the live version at https://vercel.com/shreyaillur14s-projects/music-playlist-react
 
 ## Future Improvements
 
