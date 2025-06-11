@@ -1,14 +1,15 @@
 /* src/components/PlaylistList/PlaylistList.css */
 .playlist-list {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-card);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
   .playlist-list h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
   }
   
   .playlist-list ul {
@@ -21,21 +22,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
   }
   
   .playlist-list li:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
   }
   
   .playlist-list li.selected {
-    background-color: #e0f7fa;
-    border-left: 3px solid #00acc1;
+    background-color: rgba(29, 185, 84, 0.1);
+    border-color: var(--primary-color);
   }
   
   .playlist-info {
@@ -45,12 +47,13 @@
   }
   
   .playlist-name {
-    font-weight: bold;
+    color: var(--text-primary);
+    font-size: 1.1rem;
   }
   
   .song-count {
-    font-size: 0.8em;
-    color: #666;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
   }
   
   .delete-btn {

@@ -1,12 +1,11 @@
 /* src/components/MusicPlayer/MusicPlayer.css */
 .music-player {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-height: 30px;
+    background: linear-gradient(to right, #1e1e1e, #2d2d2d);
+    color: var(--text-primary);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
   
   .music-player.active {
@@ -16,13 +15,14 @@
   .player-content {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
   
   .song-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 8px;
   }
   
   .now-playing {
@@ -31,31 +31,46 @@
   }
   
   .song-title {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
+    color: var(--primary-color);
   }
   
   .song-artist {
-    color: #ddd;
+    color: var(--text-secondary);
+    font-size: 1.1em;
   }
   
   .player-controls {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin: 10px 0;
+    gap: 25px;
+    margin: 15px 0;
   }
   
   .control-btn {
     background: none;
     border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+  
+  .control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
   }
   
   .play-btn {
-    font-size: 32px;
+    font-size: 40px;
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .player-timeline {
@@ -74,18 +89,15 @@
   }
   
   .progress-bar {
-    flex: 1;
-    height: 5px;
-    background-color: #555;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 3px;
-    position: relative;
+    cursor: pointer;
   }
   
   .progress {
-    position: absolute;
-    height: 100%;
-    background-color: #1DB954;
-    border-radius: 3px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 8px var(--primary-color);
   }
   
   .no-song {

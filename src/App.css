@@ -2,30 +2,32 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
+  gap: 20px;
 }
 
 .main-content {
   display: flex;
-  flex: 1;
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
 .sidebar {
-  width: 300px;
-  background-color: #f5f5f5;
-  padding: 15px;
-  border-radius: 8px;
+  width: 320px;
+  background-color: var(--background-card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .content {
   flex: 1;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
+  background-color: var(--background-card);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .playlist-detail h2 {
@@ -84,35 +86,42 @@
 
 .songs-list table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 8px;
 }
 
-.songs-list th, .songs-list td {
-  padding: 10px;
+.songs-list th {
+  color: var(--text-secondary);
+  font-weight: 500;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
 
-.songs-list tr.playing {
-  background-color: #e9ffe9;
+.songs-list td {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+}
+
+.songs-list tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.songs-list tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.songs-list tr.playing td {
+  background-color: rgba(29, 185, 84, 0.1);
+  border: 1px solid var(--primary-color);
 }
 
 .songs-list button {
-  margin-right: 5px;
-  padding: 5px 10px;
-  background-color: #4CAF50;
+  background-color: var(--primary-color);
   color: white;
   border: none;
+  padding: 6px 12px;
   border-radius: 4px;
-  cursor: pointer;
-}
-
-.songs-list button:last-child {
-  background-color: #f44336;
-}
-
-.songs-list button:hover {
-  opacity: 0.8;
+  margin-right: 8px;
 }
 
 .no-selection {

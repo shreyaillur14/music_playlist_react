@@ -1,20 +1,25 @@
 /* src/components/Header/Header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 0 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .logo h1 {
-    font-size: 24px;
-    margin: 15px 0;
-  }
-  
-  .header-right {
-    font-style: italic;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, var(--primary-color), #179443);
+  color: var(--text-primary);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.header-right {
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
